@@ -3,6 +3,12 @@ layout: default
 title: Jamie Hoeks
 ---
 
-[Go to skeoh.com][home].
+## [R&eacute;sum&eacute;][resume]
 
-[home]: http://skeoh.com/
+## [Projects][projects]
+
+## [Contact][email]
+
+[resume]: http://skeoh.com/resume
+[projects]: {{ site.url }}/projects
+[email]: mailto:j@skeoh.com
