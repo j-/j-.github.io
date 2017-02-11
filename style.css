@@ -95,7 +95,6 @@ h6 {
 }
 
 .list-item {
-	position: relative;
 	display: block;
 	margin: 1.5em 0;
 }
@@ -104,16 +103,6 @@ h6 {
 	display: block;
 	padding: 0.5em;
 	margin: 0 -0.5em;
-}
-
-.list-item-link::before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
 }
 
 .breadcrumbs {
