@@ -105,3 +105,31 @@ body,
 :hover .text-reset {
 	text-decoration: none;
 }
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0.5em;
+	margin: 0.5em -0.5em 1em;
+	display: block;
+}
+
+.breadcrumbs::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.breadcrumbs > .breadcrumb {
+	display: inline-block;
+	float: left;
+}
+
+.breadcrumbs > .breadcrumb:not(:first-child)::before {
+	display: inline-block;
+	content: '/';
+	margin: 0 0.125em;
+}
+
+.breadcrumbs > .breadcrumb a {
+	color: #666;
+}
