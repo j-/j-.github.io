@@ -141,3 +141,7 @@ h6 {
 .breadcrumbs > .breadcrumb a {
 	color: #666;
 }
+
+.breadcrumbs > .breadcrumb:last-child a {
+	color: #000;
+}
