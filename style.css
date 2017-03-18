@@ -118,24 +118,19 @@ h6 {
 
 .breadcrumbs {
 	list-style: none;
-	display: block;
-}
-
-.breadcrumbs::after {
-	content: '';
-	display: block;
-	clear: both;
+	display: flex;
+	flex-direction: row;
 }
 
 .breadcrumbs > .breadcrumb {
-	display: inline-block;
-	float: left;
+	display: flex;
+	flex-direction: row;
 }
 
 .breadcrumbs > .breadcrumb:not(:first-child)::before {
-	display: inline-block;
+	display: block;
 	content: '/';
-	margin: 0 0.125em;
+	margin: 0 0.25em;
 }
 
 .breadcrumbs > .breadcrumb a {
