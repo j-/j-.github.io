@@ -8,26 +8,101 @@
 <title>Jamie Hoeks (skeoh.com)</title>
 
 <link rel="icon" href="/favicon.ico">
-<link rel="stylesheet" href="/homepage.css">
+<link rel="stylesheet" href="/style.css">
 
-<body id="home">
-	<div class="container">
-		<h1><a href="/" title="skeoh.com">Jamie Hoeks</a></h1>
+<header>
+	<h1><a href="/" title="skeoh.com">Jamie Hoeks</a></h1>
+	<h2>Web developer</h2>
+</header>
 
-		<h2 class="lede">Web developer</h2>
+<nav>
+	<li><a href="/resume/">R&eacute;sum&eacute;</a></li>
+	<li><a href="https://github.com/j-">GitHub</a></li>
+	<li><a href="mailto:j@skeoh.com">Email</a></li>
+</nav>
 
-		<section id="resume">
-			<h3><a href="/resume/" title="View my r&eacute;sum&eacute;">R&eacute;sum&eacute;</a></h3>
-		</section>
-
-		<section id="projects">
-			<h3><a href="/projects/" title="View my projects">Projects</a></h3>
-		</section>
-
-		<section id="contact">
-			<h3><a href="mailto:j@skeoh.com" title="Send me an email">Contact me</a></h3>
-		</section>
+<section>
+	<h2>Projects</h2>
+	<div class="projects-list-container">
+		<ul class="projects-list">
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/base64/">base64</a></h3>
+				<p>Base 64 encoding/decoding tool. Simply encodes text into a base 64 string and decodes base 64 into a text string.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/battery/">battery</a></h3>
+				<p>Simple device battery status indicator. Shows current battery level as a percentage, charging state, and if the battery is full.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/black/">black</a></h3>
+				<p>Just a black screen. Useful for detecting stuck pixels, blocking distractions behind foreground windows, and reducing ambient light from always-on displays.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/bookmarklet/">bookmarklet</a></h3>
+				<p>Easily generate bookmarklets from JavaScript snippets. Just paste some code and drag your new bookmarklet into your browser's bookmarks.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/char/">char</a></h3>
+				<p>Explore the unicode character set. Switch characters between different encoding schemes like hexadecimal, binary, CSS, JavaScript and HTML entities.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/combinations/">combinations</a></h3>
+				<p>Get each possible combination from all given inputs. When given a set of sets, this tool generates a table of all combinations of a single item from each set.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/cursors/">cursors</a></h3>
+				<p>Lists CSS cursor types. Hover over each for an example of what that cursor looks like in your browser. Test custom cursors, too.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/data-transfer/">data-transfer</a></h3>
+				<p>Inspect the data sent to the browser after a copy+paste or a drag+drop operation. See the event's data types and associated files.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/embiggen/">embiggen</a></h3>
+				<p>Make text BIGGER. Resizes all text entered as you type to make it as big as possible on your screen but still fit.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/file-type/">file-type</a></h3>
+				<p>Look up the MIME type of a file based on its contents instead of its extension. Useful when the extension is unknown or unreliable.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/gamepad/">gamepad</a></h3>
+				<p>View the state of all connected gamepads. See which buttons are pressed and where the joysticks are. Useful diagnostics for developing games.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/global-composite-operation/">global-composite-operation</a></h3>
+				<p>Demonstrates JS canvas composite operations. Lists all the operations and shows an example for each. Adjust the colors and see how the effect changes.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/keyboard/">keyboard</a></h3>
+				<p>Simulates your keyboard on screen. See when keyup/keydown events are registered and the key codes associated with the key you just pressed.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/lorem-ipsum/">lorem-ipsum</a></h3>
+				<p>Generate words, sentences or paragraphs of lorem ipsum. Easily create bodies of random text for use as a placeholder in web or print design.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/opener/">opener</a></h3>
+				<p>Open a popup window to a location of your choosing with a given width and height. Useful if you want to take a screenshot just the right size.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/sizer/">sizer</a></h3>
+				<p>Check the inner and outer width and height of a window. Resize your window and see how the values change as you do.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/text-cols/">text-cols</a></h3>
+				<p>Resize a textarea by columns. See how text-wrapping changes a body of text when adjusting the amount of space available to it.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/tables/">tables</a></h3>
+				<p>Copy and paste a table from Excel (or any TSV formatted data source) and easily create a JIRA or markdown formatted table.</p>
+			</li>
+			<li class="projects-list-item">
+				<h3><a class="projects-list-item-link" href="/uuids/">uuids</a></h3>
+				<p>Generate multiple UUIDs for testing. Easily create hundreds of UUIDs and copy them to clipboard or just download them in JSON or CSV formats.</p>
+			</li>
+		</ul>
 	</div>
-</body>
+</section>
 
 <script src="/analytics.js"></script>

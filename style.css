@@ -2,33 +2,15 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 100%;
 	background-color: #fff;
 }
 
 body {
-	font: 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-@media (max-width: 600px) {
-	body {
-		font-size: 14px;
-	}
-}
-
-body#home {
-	justify-content: center;
-	min-width: 300px;
-	min-height: 400px;
-}
-
-.container {
-	max-width: 800px;
-	margin: 2em;
+	color: #222;
+	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 5em;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 a {
@@ -41,102 +23,111 @@ a:hover {
 	text-decoration: underline;
 }
 
-p {
-	margin: 0.5em 0 1em;
+h1 {
+	font-size: 4em;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+h2 {
+	color: hsl(200, 10%, 30%);
+	font-size: 3em;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0;
+	padding: 1rem 0;
+	cursor: default;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+	cursor: default;
 }
 
 h1 a,
 h1 a:hover {
 	color: #000;
-	cursor: default;
+}
+
+h1 a:hover,
+h1 a:focus,
+nav li a:hover,
+nav li a:focus,
+.projects-list-item-link:focus,
+.projects-list-item-link:hover {
 	text-decoration: none;
+	border-bottom: 2px solid currentColor;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-	display: block;
+nav {
+	font-size: 2em;
+	line-height: 1em;
+	margin: 3rem 0 10rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-h1,
-h2,
-h3 {
-	font-weight: normal;
-}
-
-h1,
-h2,
-ul,
-ol {
-	margin: 0 0 3rem;
-	padding: 0;
-}
-
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 1rem;
-	padding: 0;
-}
-
-.lede {
-	color: #666;
-	cursor: default;
-}
-
-.list {
+nav li {
 	list-style: none;
+}
+
+nav li:not(:last-child)::after {
+	content: '\b7';
+	margin: 0 1rem;
+	color: hsl(200, 10%, 30%);
+}
+
+.projects-list-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.projects-list {
+	max-width: 66rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-self: center;
+	justify-content: center;
 	padding: 0;
-	margin: 1em 0;
 }
 
-.list-item {
+.projects-list-item {
 	position: relative;
-	display: block;
-	margin: 1.5em 0;
+	list-style: none;
+	background: #fff;
+	width: 20rem;
+	height: 13rem;
+	margin: 1rem;
+	padding: 1rem;
+	box-sizing: border-box;
+	text-align: left;
 }
 
-.list-item-link {
-	display: block;
-	padding: 0.5em;
-	margin: 0 -0.5em;
+.projects-list-item p {
+	line-height: 1.5em;
 }
 
-.list-item-link::before {
-	content: '';
-	display: block;
+.projects-list-item-link::after {
 	position: absolute;
+	content: '';
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumbs {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-}
-
-.breadcrumbs > .breadcrumb {
-	display: flex;
-	flex-direction: row;
-}
-
-.breadcrumbs > .breadcrumb:not(:first-child)::before {
-	display: block;
-	content: '/';
-	margin: 0 0.25em;
-}
-
-.breadcrumbs > .breadcrumb a {
-	color: #666;
-}
-
-.breadcrumbs > .breadcrumb:last-child a {
-	color: #000;
+.projects-list-item-link:focus::after,
+.projects-list-item-link:hover::after {
+	outline: 1px solid rgba(0, 0, 0, 0.4);
 }
