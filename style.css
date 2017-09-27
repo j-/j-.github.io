@@ -92,7 +92,7 @@ nav li:not(:last-child)::after {
 }
 
 .projects-list {
-	max-width: 66rem;
+	max-width: 66em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -105,10 +105,10 @@ nav li:not(:last-child)::after {
 	position: relative;
 	list-style: none;
 	background: #fff;
-	width: 20rem;
-	height: 13rem;
-	margin: 1rem;
-	padding: 1rem;
+	width: 20em;
+	height: 13em;
+	margin: 1em;
+	padding: 1em;
 	box-sizing: border-box;
 	text-align: left;
 }
