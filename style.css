@@ -21,7 +21,16 @@ a {
 a:hover,
 a:focus {
 	color: #269;
-	text-decoration: underline;
+}
+
+a:hover {
+	border-bottom: 1px solid currentColor;
+}
+
+a:focus {
+	text-decoration: none;
+	outline: 1px solid currentColor;
+	border-bottom: 1px solid currentColor;
 }
 
 h1 {
