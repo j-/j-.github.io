@@ -118,6 +118,10 @@ nav li:not(:last-child)::after {
 	line-height: 1.5em;
 }
 
+.projects-list-item p a {
+	position: relative;
+}
+
 .projects-list-item-link::after {
 	position: absolute;
 	content: '';
