@@ -90,8 +90,15 @@ nav {
 	line-height: 1em;
 	margin: 3rem 0 10rem;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	width: 100%;
+}
+
+nav div {
+	width: 100%;
+	display: flex;
 	justify-content: center;
+	margin: 0.5rem 0;
 }
 
 nav li {
