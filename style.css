@@ -98,17 +98,11 @@ nav div {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: 0.5rem 0;
 }
 
 nav li {
 	list-style: none;
-}
-
-nav li:not(:last-child)::after {
-	content: '\b7';
-	margin: 0 1rem;
-	color: hsl(200, 10%, 30%);
+	padding: 1rem;
 }
 
 .projects-list-container {
