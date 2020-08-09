@@ -176,7 +176,7 @@ nav li {
 @media (prefers-color-scheme: dark) {
 	body {
 		color: #ddd;
-		background-color: #000;
+		background-color: #111;
 	}
 
 	a {
@@ -199,6 +199,6 @@ nav li {
 	}
 
 	.projects-list-item {
-		background-color: #111;
+		background-color: #222;
 	}
 }
