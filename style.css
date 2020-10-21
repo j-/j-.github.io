@@ -2,12 +2,15 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+}
+
+html {
+	color: #222;
+	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #fff;
 }
 
 body {
-	color: #222;
-	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 5em;
 	box-sizing: border-box;
 	text-align: center;
@@ -174,7 +177,7 @@ nav li {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	html {
 		color: #ddd;
 		background-color: #111;
 	}
