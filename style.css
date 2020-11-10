@@ -129,7 +129,7 @@ nav li {
 	list-style: none;
 	background-color: #eee;
 	width: 20em;
-	height: 13em;
+	min-height: 13em;
 	margin: 1em;
 	padding: 1em;
 	box-sizing: border-box;
